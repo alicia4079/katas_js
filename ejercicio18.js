@@ -13,6 +13,7 @@ for (let i = 0; i < placesToTravel.length; i++) {
 
   if (place.id === 11 || place.id === 40) {
     placesToTravel.splice(i, 1)
+    i--
   }
 }
 

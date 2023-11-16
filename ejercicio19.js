@@ -10,7 +10,8 @@ const toys = [
 for (let i = 0; i < toys.length; i++) {
   const toy = toys[i]
   if (toy.name.includes('gato')) {
-    toys.splice(i)
+    toys.splice(i, 1)
+    i--
   }
 }
 
