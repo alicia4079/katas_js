@@ -11,10 +11,10 @@ const avengers = [
 ]
 
 function findLongestWord(array) {
-  let longestWord = array[0].replace(/[.\s]/g, '') // Eliminar espacios y puntos de la primera palabra
+  let longestWord = array[0].replace(/[.\s]/g, '')
 
   for (let i = 1; i < array.length; i++) {
-    const currentWord = array[i].replace(/[.\s]/g, '') // Eliminar espacios y puntos de la palabra actual
+    const currentWord = array[i].replace(/[.\s]/g, '')
 
     if (currentWord.length > longestWord.length) {
       longestWord = currentWord
